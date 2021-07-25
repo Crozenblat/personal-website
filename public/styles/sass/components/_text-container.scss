@@ -1,0 +1,35 @@
+.section{
+    
+    &_text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 58rem;
+
+        @media only screen and (max-width: 1300px){
+            width: 47rem;
+        };
+
+        @media only screen and (max-width: 1025px){
+            width: 60rem;
+        };
+
+        @media only screen and (max-width: 685px){
+            width: 40rem;
+        };
+
+        @media only screen and (max-width: 461px){
+            width: 37rem;
+        };
+
+        @media only screen and (max-width: 376px){
+            width: 30rem;
+        };
+
+        @media only screen and (max-width: 281px){
+            width: 27rem;
+        };
+    };
+};

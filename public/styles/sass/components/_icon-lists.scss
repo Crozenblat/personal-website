@@ -1,0 +1,87 @@
+.tech-item, .hobby{
+    list-style: none;
+    margin: 0 1rem;
+    position: relative;
+
+    @media only screen and (max-width: 685px){
+        margin: 0.4rem;
+    };
+
+    @media only screen and (max-width: 426px){
+        margin: 0 0.2rem;
+    };
+
+    &_icon{
+        z-index: 1;
+        width: 4rem;
+
+        @media only screen and (max-width: 1300px){
+            width: 3.3rem;
+        };
+
+        @media only screen and (max-width: 1025px){
+            width: 5.5rem;
+        };
+
+        @media only screen and (max-width: 905px){
+            width: 4rem;
+        };
+
+        @media only screen and (max-width: 514px){
+            width: 3rem;
+        };
+
+        @media only screen and (max-width: 376px){
+            width: 2.5rem;
+        };
+
+        @media only screen and (max-width: 281px){
+            width: 2.3rem;
+        };
+    };
+
+    &_tooltip{
+        visibility: hidden;
+        width: 11.4rem;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 112%;
+        left: -93%;
+        opacity: 0;
+        transition: opacity 0.3s;
+
+        @media only screen and (max-width: 1300px){
+            width: 10.1rem;
+            bottom: 115%;
+            left: -106%;
+        };
+
+        @media only screen and (max-width: 1025px){
+            width: 12.5rem;
+            left: -60%;
+        };
+
+        @media only screen and (max-width: 905px){
+            left: -102%;
+        };
+
+        @media only screen and (max-width: 686px){
+            display: none;
+        };
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 97%;
+            left: 40%;
+            border-width: 1.1rem;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        };
+    };
+};

@@ -1,0 +1,76 @@
+.section{
+
+    &--website, &--about{
+        width: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        div{
+            transition: all 0.8s;
+        };
+    };
+
+    &--website{
+        margin: 7rem 0;
+
+        @media only screen and (max-width: 1025px){
+            margin: 5rem 0;
+        };
+
+        @media only screen and (max-width: 426px){
+            margin: 2rem 0;
+        };
+
+        &:nth-of-type(2), &:nth-of-type(4){
+            @media only screen and (max-width: 1025px){
+                flex-direction: column-reverse;
+            };
+        };
+
+        &:nth-of-type(3), &:nth-of-type(5){
+            @media only screen and (max-width: 1025px){
+                flex-direction: column;
+            };
+        };
+    };
+    
+    &--about{
+        background: whitesmoke;
+        padding: 3rem 14rem;
+        overflow: hidden;
+
+        @media only screen and (max-width: 1230px){
+            padding: 3rem 7rem;
+        };
+
+        @media only screen and (max-width: 961px){
+            padding: 3rem 2rem;
+        };
+
+        @media only screen and (max-width: 871px){
+            flex-direction: column;
+        };
+    };
+
+    &_link-btn-wrapper{
+        margin: 1rem 0;
+    };
+};
+
+.tech-list, .hobby-list{
+    display: flex;
+    justify-content: center;
+};
+
+.hobby-list{
+    margin-top: 1rem;
+}
+
+.tech-list{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0, 0.9);
+};

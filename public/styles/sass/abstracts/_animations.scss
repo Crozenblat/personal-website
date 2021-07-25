@@ -1,0 +1,65 @@
+.contents-invisible{
+
+    div{
+        opacity: 0;
+        transform: translateY(40rem);
+    };
+};
+
+@keyframes pulse {
+    from{
+        transform: scale(1);
+        opacity: 1;
+    };
+
+    to{
+        transform: scale(1.5);
+        opacity: 0;
+    };
+};
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    };
+
+    to{
+        opacity: 1;
+    };
+};
+
+@keyframes slideInFromLeft{
+    from{
+        transform: translateX(-4rem);
+    };
+
+    to{
+        transform: translateX(0);
+    };
+};
+
+@keyframes slideInFromRight{
+    from{
+        transform: translateX(4rem);
+    };
+
+    to{
+        transform: translateX(0);
+    };
+};
+
+@keyframes dash{
+    to {
+        stroke-dashoffset: 0;
+    };
+};
+
+@keyframes svgFadeIn{
+    from{
+        fill: transparent;
+    };
+
+    to{
+        fill: $fontColor;
+    };
+};
