@@ -57,20 +57,3 @@
         margin: 1rem 0;
     };
 };
-
-.tech-list, .hobby-list{
-    display: flex;
-    justify-content: center;
-};
-
-.hobby-list{
-    margin-top: 1rem;
-}
-
-.tech-list{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0,0,0, 0.9);
-};

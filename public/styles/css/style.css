@@ -323,6 +323,23 @@ body {
   }
 }
 
+.tech-list, .hobby-list {
+  display: flex;
+  justify-content: center;
+}
+
+.hobby-list {
+  margin-top: 1rem;
+}
+
+.tech-list {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+
 .tech-item, .hobby {
   list-style: none;
   margin: 0 1rem;
@@ -418,6 +435,12 @@ body {
   border-width: 1.1rem;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
+}
+.tech-item:hover .tech-item_tooltip, .tech-item:hover .hobby_tooltip, .hobby:hover .tech-item_tooltip, .hobby:hover .hobby_tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-0.5rem);
+  transition: all 0.2s;
 }
 
 .section_text-container {
@@ -916,23 +939,6 @@ body {
 }
 .section_link-btn-wrapper {
   margin: 1rem 0;
-}
-
-.tech-list, .hobby-list {
-  display: flex;
-  justify-content: center;
-}
-
-.hobby-list {
-  margin-top: 1rem;
-}
-
-.tech-list {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.9);
 }
 
 /*# sourceMappingURL=style.css.map */
