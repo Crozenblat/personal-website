@@ -21,6 +21,14 @@
     opacity: 1;
   }
 }
+@keyframes fadeBack {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
 @keyframes slideInFromLeft {
   from {
     transform: translateX(-4rem);
@@ -73,7 +81,12 @@ body {
 }
 
 .banner_heading {
-  font-size: 5rem;
+  font-size: 9rem;
+}
+@media only screen and (max-width: 1441px) {
+  .banner_heading {
+    font-size: 5rem;
+  }
 }
 @media only screen and (max-width: 649px) {
   .banner_heading {
@@ -102,7 +115,12 @@ body {
 }
 
 .cta-btn {
-  font-size: 3rem;
+  font-size: 4.3rem;
+}
+@media only screen and (max-width: 1441px) {
+  .cta-btn {
+    font-size: 3rem;
+  }
 }
 @media only screen and (max-height: 376px) {
   .cta-btn {
@@ -200,11 +218,17 @@ body {
   background-image: linear-gradient(135deg, #47c465, #00deff), linear-gradient(135deg, #47c465, #00deff);
   border: none;
   border-radius: 50px;
-  width: 19rem;
-  height: 5rem;
+  width: 27rem;
+  height: 9rem;
   transition: all 0.2s;
   color: white;
   transform-style: preserve-3d;
+}
+@media only screen and (max-width: 1441px) {
+  .cta-btn {
+    width: 19rem;
+    height: 5rem;
+  }
 }
 @media only screen and (max-width: 501px) {
   .cta-btn {
@@ -642,8 +666,9 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: black;
   z-index: -1;
+  animation: fadeBack 1s ease-out forwards;
 }
 .banner_video {
   height: 100%;
@@ -654,9 +679,15 @@ body {
 }
 .banner_name-svg {
   z-index: 1;
-  width: 61rem;
-  height: 23rem;
+  width: 102rem;
+  height: 40rem;
   align-self: center;
+}
+@media only screen and (max-width: 1441px) {
+  .banner_name-svg {
+    width: 61rem;
+    height: 23rem;
+  }
 }
 @media only screen and (max-width: 769px) {
   .banner_name-svg {
@@ -741,8 +772,13 @@ body {
   position: relative;
   z-index: 2;
   opacity: 0;
-  margin-left: 12rem;
+  margin-left: 26rem;
   animation: fadeIn 1s ease-out forwards, slideInFromLeft 1s ease-out;
+}
+@media only screen and (max-width: 1441px) {
+  .banner_heading--top {
+    margin-left: 12rem;
+  }
 }
 @media only screen and (max-width: 1025px) {
   .banner_heading--top {
@@ -776,9 +812,14 @@ body {
 }
 .banner_heading--bottom {
   align-self: flex-end;
-  margin-right: 12rem;
+  margin-right: 26rem;
   opacity: 0;
   animation: fadeIn 1s ease-out forwards 1s, slideInFromRight 1s ease-out 1s;
+}
+@media only screen and (max-width: 1441px) {
+  .banner_heading--bottom {
+    margin-left: 12rem;
+  }
 }
 @media only screen and (max-width: 1025px) {
   .banner_heading--bottom {
@@ -798,7 +839,12 @@ body {
 
 .banner_contact-btn-wrapper {
   align-self: flex-end;
-  margin: 2rem;
+  margin: 4rem;
+}
+@media only screen and (max-width: 1441px) {
+  .banner_contact-btn-wrapper {
+    margin: 2rem;
+  }
 }
 @media only screen and (max-width: 649px) {
   .banner_contact-btn-wrapper {

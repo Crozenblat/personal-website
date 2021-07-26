@@ -2,11 +2,16 @@
     background-image: $linearGradient;
     border: none;
     border-radius: 50px;
-    width: 19rem;
-    height: 5rem;
+    width: 27rem;
+    height: 9rem;
     transition: all 0.2s;
     color: white;
     transform-style: preserve-3d;
+
+    @media only screen and (max-width: 1441px){
+        width: 19rem;
+        height: 5rem;
+    };
 
     @media only screen and (max-width: 501px){
         height: 4rem;

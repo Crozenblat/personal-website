@@ -11,8 +11,9 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(0,0,0, 0.7);
+        background-color: rgb(0,0,0);
         z-index: -1;
+        animation: fadeBack 1s ease-out forwards;
     };
 
     &_video{
@@ -168,7 +169,11 @@
 
 .banner_contact-btn-wrapper{
     align-self: flex-end;
-    margin: 2rem;
+    margin: 4rem;
+
+    @media only screen and (max-width: 1441px){
+        margin: 2rem
+    };
 
     @media only screen and (max-width: 649px){
         margin: 2rem 3rem 0 0;

@@ -28,6 +28,16 @@
     };
 };
 
+@keyframes fadeBack{
+    from{
+        opacity: 1;
+    };
+
+    to{
+        opacity: 0.7;
+    };
+};
+
 @keyframes slideInFromLeft{
     from{
         transform: translateX(-4rem);
