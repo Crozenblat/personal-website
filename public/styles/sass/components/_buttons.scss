@@ -59,7 +59,7 @@
     position: relative;
     border-radius: 50%;
     border: none;
-    padding: 4rem;
+    padding: 6rem;
     margin: 1rem 0;
     background-image: $linearGradient;
 
@@ -101,13 +101,14 @@
 
 .banner_down-arrow{
     position: absolute;
-    width: 6rem;
+    width: 10rem;
     left: 1rem;
     top: 1.4rem;
 
     @media only screen and (max-width: 501px){
         left: 0.5rem;
         top: 1rem;
+        width: 6rem;
     };
 
     @media only screen and (max-height: 415px){
