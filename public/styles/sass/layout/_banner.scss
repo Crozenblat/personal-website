@@ -25,9 +25,14 @@
 
     &_name-svg{
         z-index: 1;
-        width: 61rem;
-        height: 23rem;
+        width: 102rem;
+        height: 40rem;
         align-self: center;
+
+        @media only screen and (max-width: 1441px){
+            width: 61rem;
+            height: 23rem;
+        };
 
         @media only screen and (max-width: 769px){
             width: 50rem;
@@ -104,8 +109,12 @@
             position: relative;
             z-index: 2;
             opacity: 0;
-            margin-left: 12rem;
+            margin-left: 26rem;
             animation: fadeIn 1s ease-out forwards, slideInFromLeft 1s ease-out;
+
+            @media only screen and (max-width: 1441px){
+                margin-left: 12rem;
+            };
 
             @media only screen and (max-width: 1025px){
                 margin-left: 5rem;
@@ -134,9 +143,13 @@
 
         &--bottom{
             align-self: flex-end;
-            margin-right: 12rem;
+            margin-right: 26rem;
             opacity: 0;
             animation: fadeIn 1s ease-out forwards 1s, slideInFromRight 1s ease-out 1s;
+
+            @media only screen and (max-width: 1441px){
+                margin-left: 12rem;
+            };
 
             @media only screen and (max-width: 1025px){
                 margin-right: 5rem;
