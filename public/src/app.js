@@ -13,6 +13,10 @@ const throttle = (fn, wait) => {
 };
 
 (function init(){
+    let bannerVideo =  document.querySelector(".banner_video");
+    bannerVideo.play();
+
+
     let banner = document.querySelector(".banner");
     banner.style.height = `${window.innerHeight}px`;
 
