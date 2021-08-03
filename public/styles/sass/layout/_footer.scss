@@ -6,20 +6,15 @@
     @media only screen and (max-width: 769px){
         flex-direction: column;
         align-items: center;
-        height: 11rem;
+        height: 20rem;
+    };
+
+    @media only screen and (max-width: 514px){
+        height: 14rem;
     };
 
     &_email-label{
         color:grey;
-        font-size: 2rem;
-
-        @media only screen and (max-width: 426px){
-            font-size: 1.7rem;
-        };
-
-        @media only screen and (max-width: 376px){
-            font-size: 1.4rem;
-        };
     };
 
     &_info-container{
@@ -28,8 +23,21 @@
         align-items: center;
     };
 
-    &_profile-link{
+    &_profile-logo{
         transition: all 0.2s;
+        width: 9rem;
+
+        @media only screen and (max-width: 1800px){
+            width: 7rem;
+        };
+
+        @media only screen and (max-width: 1441px){
+            width: 5.5rem;
+        };
+
+        @media only screen and (max-width: 514px){
+            width: 4.5rem;
+        };
 
         &:hover{
             opacity: 0.8;
@@ -38,10 +46,6 @@
 
     &_email-link{
         color: $fontColor;
-    };
-
-    &_credit{
-        font-size: 1rem;
     };
 
     &_credit-container{

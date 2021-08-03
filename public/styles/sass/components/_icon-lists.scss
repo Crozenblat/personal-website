@@ -20,6 +20,10 @@
     margin: 0 1rem;
     position: relative;
 
+    @media only screen and (max-width: 2000px){
+        margin: 0 0.5rem;
+    };
+
     @media only screen and (max-width: 685px){
         margin: 0.4rem;
     };
@@ -30,10 +34,22 @@
 
     &_icon{
         z-index: 1;
-        width: 4rem;
+        width: 8rem;
 
-        @media only screen and (max-width: 1300px){
-            width: 3.3rem;
+        @media only screen and (max-width: 2000px){
+            width: 7rem;
+        };
+
+        @media only screen and (max-width: 1800px){
+            width: 6rem;
+        };
+
+        @media only screen and (max-width: 1441px){
+            width: 5rem;
+        };
+
+        @media only screen and (max-width: 1200px){
+            width: 4.4rem;
         };
 
         @media only screen and (max-width: 1025px){

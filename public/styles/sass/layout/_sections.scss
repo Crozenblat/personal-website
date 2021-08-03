@@ -1,7 +1,6 @@
 .section{
 
     &--website, &--about{
-        width: 100%; 
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -13,13 +12,22 @@
 
     &--website{
         margin: 7rem 0;
+        width: 91%; 
+
+        @media only screen and (max-width: 1800px){
+            width: 100%;
+        };
 
         @media only screen and (max-width: 1025px){
-            margin: 5rem 0;
+            margin: 2rem 0;
+        };
+
+        @media only screen and (max-width: 514px){
+            margin: 1.5rem 0;
         };
 
         @media only screen and (max-width: 426px){
-            margin: 2rem 0;
+            margin: 1rem 0;
         };
 
         &:nth-of-type(2), &:nth-of-type(4){
@@ -39,16 +47,13 @@
         background: whitesmoke;
         padding: 3rem 14rem;
         overflow: hidden;
-
-        @media only screen and (max-width: 1230px){
-            padding: 3rem 7rem;
+        width: 100%;
+        
+        @media only screen and (max-width: 1700px){
+            padding: 3rem 0;
         };
 
-        @media only screen and (max-width: 961px){
-            padding: 3rem 2rem;
-        };
-
-        @media only screen and (max-width: 871px){
+        @media only screen and (max-width: 1025px){
             flex-direction: column;
         };
     };

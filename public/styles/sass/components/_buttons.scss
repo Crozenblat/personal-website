@@ -2,24 +2,54 @@
     background-image: $linearGradient;
     border: none;
     border-radius: 50px;
-    width: 27rem;
-    height: 9rem;
+    width: 33rem;
+    height: 8rem;
     transition: all 0.2s;
     color: white;
     transform-style: preserve-3d;
 
-    @media only screen and (max-width: 1441px){
-        width: 19rem;
-        height: 5rem;
+    &--section{
+
+        @media only screen and (max-width: 1800px){
+            width: 29rem;
+        };
+
+        @media only screen and (max-width: 1441px){
+            height: 5.5rem;
+            width: 21rem;
+        };
+
+        @media only screen and (max-width: 1025px){
+            height: 4.5rem;
+            width: 19rem;
+        };
+
+        @media only screen and (max-width: 514px){
+            height: 4rem;
+            width: 16rem;
+        };
+
+        @media only screen and (max-width: 426px){
+            height: 3.5rem;
+            width: 14rem;
+        };
     };
 
-    @media only screen and (max-width: 501px){
-        height: 4rem;
-    };
+    &--about{
+        @media only screen and (max-width: 1800px){
+            width: 28rem;
+            height: 7rem;
+        };
 
-    @media only screen and (max-height: 376px){
-        width: 14rem;
-        height: 3rem;
+        @media only screen and (max-width: 1441px){
+            width: 21rem;
+            height: 5rem;
+        };
+
+        @media only screen and (max-width: 514px){
+            width: 17rem;
+            height: 4rem;
+        };
     };
 
     &_arrow{
@@ -64,12 +94,20 @@
     position: relative;
     border-radius: 50%;
     border: none;
-    padding: 6rem;
+    padding: 8rem;
     margin: 1rem 0;
     background-image: $linearGradient;
 
-    @media only screen and (max-width: 501px){
-        padding: 3.5rem;
+    @media only screen and (max-width: 1300px){
+        padding: 7rem;
+    };
+
+    @media only screen and (max-width: 769px){
+        padding: 6rem;
+    };
+
+    @media only screen and (max-height: 950px){
+        padding: 7rem;
     };
 
     @media only screen and (max-height: 541px){
@@ -82,6 +120,45 @@
 
     @media only screen and (max-height: 281px){
         padding: 2.5rem;
+    };
+
+    @media only screen and (max-height: 860px){
+
+        @media only screen and (max-width: 769px){
+            padding: 6rem;
+        };
+
+        @media only screen and (max-width: 426px){
+            padding: 5.5rem;
+        };
+    };
+// 750 HEIGHT
+    @media only screen and (max-height: 750px){
+        padding: 6rem;
+    };
+// 670 HEIGHT
+    @media only screen and (max-height: 670px){
+        padding: 5rem;
+    };
+// 500 HEIGHT
+    @media only screen and (max-height: 500px){
+        padding: 4rem;
+    };
+// 420 HEIGHT
+    @media only screen and (max-height: 420px){
+        padding: 5rem;
+    }; 
+// 376 HEIGHT
+    @media only screen and (max-height: 376px){
+        padding: 4.5rem;
+    }; 
+// 360 HEIGHT
+    @media only screen and (max-height: 360px){
+        padding: 4rem;
+    };
+// 280 HEIGHT
+    @media only screen and (max-height: 280px){
+        padding: 3rem;
     };
 
     &::after {
@@ -106,24 +183,66 @@
 
 .banner_down-arrow{
     position: absolute;
-    width: 10rem;
-    left: 1rem;
-    top: 1.4rem;
+    width: 13rem;
+    left: 1.5rem;
+    top: 2rem;
 
-    @media only screen and (max-width: 501px){
-        left: 0.5rem;
-        top: 1rem;
-        width: 6rem;
+    @media only screen and (max-width: 1300px){
+        width: 11rem;
     };
 
-    @media only screen and (max-height: 415px){
-        width: 5rem;
-        top: 1rem;
-        left: 0.5rem
+    @media only screen and (max-width: 769px){
+        width: 9rem;
+    };
+
+    @media only screen and (max-height: 950px){
+        width: 11rem;
     };
 
     @media only screen and (max-height: 281px){
         width: 4rem;
         top: 0.8rem;
+    };
+// 860 HEIGHT
+    @media only screen and (max-height: 860px){
+
+        @media only screen and (max-width: 769px){
+            width: 9rem;
+        };
+
+        @media only screen and (max-width: 426px){
+            width: 8rem;
+        };
+    };
+// 750 HEIGHT
+    @media only screen and (max-height: 750px){
+        width: 9rem;
+    };
+// 670 HEIGHT
+    @media only screen and (max-height: 670px){
+        width: 7rem;
+    };
+// 500 HEIGHT
+    @media only screen and (max-height: 500px){
+        width: 5rem;
+    };
+// 420 HEIGHT
+    @media only screen and (max-height: 420px){
+        width: 7rem;
+    }; 
+// 376 HEIGHT
+    @media only screen and (max-height: 376px){
+        width: 6rem;
+    }; 
+// 360 HEIGHT
+    @media only screen and (max-height: 360px){
+        left: 1.1rem;
+        top: 1.5rem;
+    }; 
+// 280 HEIGHT
+    @media only screen and (max-height: 280px){
+        width: 5rem;
+        top: 1rem;
+        left: 0.6rem;
     };
 };
