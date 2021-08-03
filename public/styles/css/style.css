@@ -371,6 +371,11 @@ body {
 .footer_credit {
   font-size: 2rem;
 }
+@media only screen and (max-width: 2000px) {
+  .footer_credit {
+    font-size: 1.5rem;
+  }
+}
 @media only screen and (max-width: 1441px) {
   .footer_credit {
     font-size: 1.2rem;
