@@ -236,21 +236,6 @@ body{
     };
 };
 
-.tech-item, .hobby{
-
-    &_tooltip{
-        font-size: 1.5rem;
-
-        @media only screen and (max-width: 1300px){
-            font-size: 1.3rem;
-        };
-
-        @media only screen and (max-width: 1025px){
-            font-size: 1.6rem;
-        };
-    };
-};
-
 .footer{
 
     &_email-label{

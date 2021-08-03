@@ -321,20 +321,6 @@ body {
   }
 }
 
-.tech-item_tooltip, .hobby_tooltip {
-  font-size: 1.5rem;
-}
-@media only screen and (max-width: 1300px) {
-  .tech-item_tooltip, .hobby_tooltip {
-    font-size: 1.3rem;
-  }
-}
-@media only screen and (max-width: 1025px) {
-  .tech-item_tooltip, .hobby_tooltip {
-    font-size: 1.6rem;
-  }
-}
-
 .footer_email-label {
   font-size: 4rem;
 }
@@ -739,59 +725,6 @@ body {
   .tech-item_icon, .hobby_icon {
     width: 2.3rem;
   }
-}
-.tech-item_tooltip, .hobby_tooltip {
-  visibility: hidden;
-  width: 11.4rem;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 112%;
-  left: -93%;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-@media only screen and (max-width: 1300px) {
-  .tech-item_tooltip, .hobby_tooltip {
-    width: 10.1rem;
-    bottom: 115%;
-    left: -106%;
-  }
-}
-@media only screen and (max-width: 1025px) {
-  .tech-item_tooltip, .hobby_tooltip {
-    width: 12.5rem;
-    left: -60%;
-  }
-}
-@media only screen and (max-width: 905px) {
-  .tech-item_tooltip, .hobby_tooltip {
-    left: -102%;
-  }
-}
-@media only screen and (max-width: 686px) {
-  .tech-item_tooltip, .hobby_tooltip {
-    display: none;
-  }
-}
-.tech-item_tooltip::after, .hobby_tooltip::after {
-  content: "";
-  position: absolute;
-  top: 97%;
-  left: 40%;
-  border-width: 1.1rem;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-.tech-item:hover .tech-item_tooltip, .tech-item:hover .hobby_tooltip, .hobby:hover .tech-item_tooltip, .hobby:hover .hobby_tooltip {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(-0.5rem);
-  transition: all 0.2s;
 }
 
 .section_text-container--website {
