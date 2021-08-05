@@ -1,6 +1,11 @@
-.contents-invisible div {
+.contents-invisible * {
   opacity: 0;
   transform: translateY(40rem);
+}
+
+.pulse::after {
+  opacity: 1;
+  animation: pulse 1s infinite ease-out 0.5s;
 }
 
 @keyframes pulse {
@@ -69,6 +74,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
@@ -84,106 +90,111 @@ body {
 }
 
 .banner_heading {
-  font-size: 10vh;
+  font-size: 10rem;
 }
-@media only screen and (max-width: 1800px) {
+@media only screen and (max-width: 1700px) {
   .banner_heading {
-    font-size: 7vh;
+    font-size: 8rem;
   }
 }
 @media only screen and (max-width: 1300px) {
   .banner_heading {
-    font-size: 6vh;
+    font-size: 6rem;
   }
 }
 @media only screen and (max-width: 768px) {
   .banner_heading {
-    font-size: 4.5vh;
+    font-size: 4.5rem;
   }
 }
-@media only screen and (max-width: 600px) {
+@media (max-width: 550px) {
   .banner_heading {
-    font-size: 3.5vh;
+    font-size: 3.5rem;
   }
 }
 @media only screen and (max-width: 426px) {
   .banner_heading {
-    font-size: 2.5vh;
+    font-size: 2.5rem;
   }
 }
-@media only screen and (max-height: 950px) and (min-width: 1300px) {
+@media only screen and (max-height: 950px) and (min-width: 1025px) and (max-width: 1300px) {
   .banner_heading {
-    font-size: 9vh;
+    font-size: 7rem;
   }
 }
-@media only screen and (max-height: 950px) and (min-width: 1800px) {
+@media only screen and (max-height: 950px) and (min-width: 1301px) {
   .banner_heading {
-    font-size: 10vh;
+    font-size: 9.5rem;
   }
 }
 @media only screen and (max-height: 900px) and (min-width: 600px) and (max-width: 769px) {
   .banner_heading {
-    font-size: 5vh;
+    font-size: 4.5rem;
   }
 }
-@media only screen and (max-height: 900px) and (min-width: 426px) and (max-width: 600px) {
+@media only screen and (max-height: 900px) and (min-width: 550px) and (max-width: 600px) {
   .banner_heading {
-    font-size: 3.5vh;
+    font-size: 4rem;
   }
 }
 @media only screen and (max-height: 860px) and (min-width: 1250px) {
   .banner_heading {
-    font-size: 10vh;
-  }
-}
-@media only screen and (max-height: 860px) and (min-width: 1025px) {
-  .banner_heading {
-    font-size: 8vh;
-  }
-}
-@media only screen and (max-height: 860px) and (min-width: 426px) and (max-width: 600px) {
-  .banner_heading {
-    margin-left: 4.5vh;
-  }
-}
-@media only screen and (max-height: 860px) and (max-width: 426px) {
-  .banner_heading {
-    font-size: 2.5vh;
-  }
-}
-@media only screen and (max-height: 830px) and (max-width: 426px) {
-  .banner_heading {
-    font-size: 4vh;
+    font-size: 7rem;
   }
 }
 @media only screen and (max-height: 800px) and (min-width: 769px) and (max-width: 1025px) {
   .banner_heading {
-    font-size: 7vh;
+    font-size: 5rem;
   }
 }
-@media only screen and (max-height: 720px) and (max-width: 540px) {
+@media only screen and (max-height: 720px) and (min-width: 426px) and (max-width: 540px) {
   .banner_heading {
-    font-size: 5vh;
+    font-size: 3.5rem;
   }
 }
 @media only screen and (max-height: 700px) and (min-width: 600px) and (max-width: 769px) {
   .banner_heading {
-    font-size: 7vh;
+    font-size: 5rem;
   }
 }
 @media only screen and (max-height: 700px) and (min-width: 426px) and (max-width: 600px) {
   .banner_heading {
-    font-size: 5vh;
+    font-size: 3.5rem;
   }
 }
-@media only screen and (max-height: 700px) and (max-width: 280px) {
+@media only screen and (max-height: 620px) and (min-width: 1025px) {
   .banner_heading {
-    font-size: 3.5vh;
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-height: 560px) and (min-width: 1025px) {
+  .banner_heading {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-height: 520px) and (min-width: 600px) {
+  .banner_heading {
+    font-size: 4rem;
   }
 }
 @media only screen and (max-height: 420px) {
   .banner_heading {
-    font-size: 10vh;
+    font-size: 4.2rem;
+  }
+}
+@media only screen and (max-height: 400px) {
+  .banner_heading {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-height: 370px) {
+  .banner_heading {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-height: 340px) {
+  .banner_heading {
+    font-size: 3rem;
   }
 }
 
@@ -470,70 +481,41 @@ body {
   padding: 8rem;
   margin: 1rem 0;
   background-image: linear-gradient(135deg, #47c465, #00deff), linear-gradient(135deg, #47c465, #00deff);
-}
-@media only screen and (max-width: 1300px) {
-  .banner_down-btn {
-    padding: 7rem;
-  }
+  transition: all 1.5s;
 }
 @media only screen and (max-width: 769px) {
   .banner_down-btn {
+    padding: 7rem;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .banner_down-btn {
     padding: 6rem;
   }
 }
-@media only screen and (max-height: 950px) {
+@media only screen and (min-height: 1200px) and (max-width: 1025px) {
+  .banner_down-btn {
+    padding: 9rem;
+  }
+}
+@media only screen and (min-height: 915px) and (max-height: 950px) and (min-width: 769px) {
   .banner_down-btn {
     padding: 7rem;
   }
 }
-@media only screen and (max-height: 541px) {
-  .banner_down-btn {
-    margin: 1rem;
-  }
-}
-@media only screen and (max-height: 415px) {
-  .banner_down-btn {
-    padding: 3rem;
-  }
-}
-@media only screen and (max-height: 281px) {
-  .banner_down-btn {
-    padding: 2.5rem;
-  }
-}
-@media only screen and (max-height: 860px) and (max-width: 769px) {
+@media only screen and (min-height: 860px) and (max-height: 915px) and (min-width: 1300px) {
   .banner_down-btn {
     padding: 6rem;
   }
 }
-@media only screen and (max-height: 860px) and (max-width: 426px) {
-  .banner_down-btn {
-    padding: 5.5rem;
-  }
-}
-@media only screen and (max-height: 750px) {
+@media only screen and (max-height: 760px) {
   .banner_down-btn {
     padding: 6rem;
-  }
-}
-@media only screen and (max-height: 670px) {
-  .banner_down-btn {
-    padding: 5rem;
   }
 }
 @media only screen and (max-height: 500px) {
   .banner_down-btn {
-    padding: 4rem;
-  }
-}
-@media only screen and (max-height: 420px) {
-  .banner_down-btn {
     padding: 5rem;
-  }
-}
-@media only screen and (max-height: 376px) {
-  .banner_down-btn {
-    padding: 4.5rem;
   }
 }
 @media only screen and (max-height: 360px) {
@@ -549,6 +531,7 @@ body {
 .banner_down-btn::after {
   content: "";
   display: inline-block;
+  opacity: 0;
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -557,7 +540,6 @@ body {
   left: 0;
   transition: all 0.4s;
   background: #4be14b;
-  animation: pulse 1s infinite 0.5s;
   z-index: -1;
 }
 .banner_down-btn:hover {
@@ -570,73 +552,50 @@ body {
   left: 1.5rem;
   top: 2rem;
 }
-@media only screen and (max-width: 1300px) {
-  .banner_down-arrow {
-    width: 11rem;
-  }
-}
 @media only screen and (max-width: 769px) {
   .banner_down-arrow {
+    width: 11rem;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .banner_down-arrow {
     width: 9rem;
   }
 }
-@media only screen and (max-height: 950px) {
+@media only screen and (min-height: 1200px) and (max-width: 1025px) {
+  .banner_down-arrow {
+    width: 15rem;
+  }
+}
+@media only screen and (min-height: 915px) and (max-height: 950px) and (min-width: 769px) {
   .banner_down-arrow {
     width: 11rem;
   }
 }
-@media only screen and (max-height: 281px) {
-  .banner_down-arrow {
-    width: 4rem;
-    top: 0.8rem;
-  }
-}
-@media only screen and (max-height: 860px) and (max-width: 769px) {
+@media only screen and (min-height: 860px) and (max-height: 915px) and (min-width: 1300px) {
   .banner_down-arrow {
     width: 9rem;
   }
 }
-@media only screen and (max-height: 860px) and (max-width: 426px) {
-  .banner_down-arrow {
-    width: 8rem;
-  }
-}
-@media only screen and (max-height: 750px) {
+@media only screen and (max-height: 760px) {
   .banner_down-arrow {
     width: 9rem;
-  }
-}
-@media only screen and (max-height: 670px) {
-  .banner_down-arrow {
-    width: 7rem;
   }
 }
 @media only screen and (max-height: 500px) {
   .banner_down-arrow {
-    width: 5rem;
-  }
-}
-@media only screen and (max-height: 420px) {
-  .banner_down-arrow {
     width: 7rem;
-  }
-}
-@media only screen and (max-height: 376px) {
-  .banner_down-arrow {
-    width: 6rem;
   }
 }
 @media only screen and (max-height: 360px) {
   .banner_down-arrow {
-    left: 1.1rem;
-    top: 1.5rem;
+    width: 5rem;
   }
 }
 @media only screen and (max-height: 280px) {
   .banner_down-arrow {
-    width: 5rem;
+    left: 0.5rem;
     top: 1rem;
-    left: 0.6rem;
   }
 }
 
@@ -993,6 +952,7 @@ body {
   position: relative;
   overflow: hidden;
   width: 100%;
+  height: 101vh;
 }
 .banner::before {
   content: "";
@@ -1015,7 +975,7 @@ body {
 .banner_name-svg {
   z-index: 1;
   width: 100rem;
-  height: 36rem;
+  height: 38rem;
   align-self: center;
 }
 @media only screen and (max-width: 1300px) {
@@ -1032,14 +992,20 @@ body {
 }
 @media only screen and (max-width: 769px) {
   .banner_name-svg {
-    width: 45rem;
-    height: 18rem;
+    width: 53rem;
+    height: 20rem;
   }
 }
 @media only screen and (max-width: 600px) {
   .banner_name-svg {
-    width: 33rem;
-    height: 13rem;
+    width: 45rem;
+    height: 17rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .banner_name-svg {
+    width: 35rem;
+    height: 14rem;
   }
 }
 @media only screen and (max-width: 426px) {
@@ -1080,19 +1046,20 @@ body {
 }
 @media only screen and (max-height: 560px) and (min-width: 426px) {
   .banner_name-svg {
-    width: 40rem;
-    height: 15rem;
+    width: 45rem;
+    height: 18rem;
   }
 }
-@media only screen and (max-height: 500px) and (min-width: 426px) {
+@media only screen and (max-height: 520px) and (min-width: 426px) {
   .banner_name-svg {
     width: 35rem;
-    height: 13rem;
+    height: 14rem;
   }
 }
 @media only screen and (max-height: 400px) and (min-width: 426px) {
   .banner_name-svg {
     width: 31rem;
+    height: 12rem;
   }
 }
 @media only screen and (max-height: 370px) {
@@ -1101,22 +1068,10 @@ body {
     height: 11rem;
   }
 }
-@media only screen and (max-height: 360px) {
-  .banner_name-svg {
-    width: 33rem;
-    height: 13rem;
-  }
-}
 @media only screen and (max-height: 340px) {
   .banner_name-svg {
     width: 22rem;
     height: 8rem;
-  }
-}
-@media only screen and (max-height: 320px) {
-  .banner_name-svg {
-    width: 26rem;
-    height: 10rem;
   }
 }
 .banner_name-svg path {
@@ -1135,17 +1090,17 @@ body {
   margin-top: 10rem;
   animation: fadeIn 1s ease-out forwards, slideInFromLeft 1s ease-out;
 }
-@media only screen and (max-width: 2300px) {
+@media only screen and (max-width: 2200px) {
   .banner_heading--top {
     margin-left: 24rem;
   }
 }
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 1900px) {
   .banner_heading--top {
     margin-left: 11rem;
   }
 }
-@media only screen and (max-width: 1800px) {
+@media only screen and (max-width: 1700px) {
   .banner_heading--top {
     margin-left: 7rem;
   }
@@ -1155,9 +1110,14 @@ body {
     margin-left: 4rem;
   }
 }
+@media only screen and (max-width: 1025px) {
+  .banner_heading--top {
+    margin-top: 10rem;
+  }
+}
 @media only screen and (max-width: 769px) {
   .banner_heading--top {
-    margin-top: 25rem;
+    margin-left: 2rem;
   }
 }
 @media only screen and (max-width: 426px) {
@@ -1165,165 +1125,154 @@ body {
     margin-left: 1rem;
   }
 }
-@media only screen and (max-height: 1400px) and (max-width: 1025px) {
-  .banner_heading--top {
-    margin-top: 20rem;
-  }
-}
-@media only screen and (max-height: 860px) and (min-width: 426px) and (max-width: 600px) {
+@media only screen and (min-height: 700px) and (max-height: 860px) and (min-width: 426px) and (max-width: 600px) {
   .banner_heading--top {
     margin-left: 3rem;
   }
 }
-@media only screen and (max-height: 860px) and (max-width: 540px) {
-  .banner_heading--top {
-    margin-top: 13rem;
-  }
-}
-@media only screen and (max-height: 860px) and (max-width: 769px) {
-  .banner_heading--top {
-    margin-top: 17rem;
-  }
-}
-@media only screen and (max-height: 860px) and (max-width: 1025px) {
+@media only screen and (min-height: 700px) and (max-height: 860px) and (max-width: 1025px) {
   .banner_heading--top {
     margin-top: 10rem;
   }
 }
-@media only screen and (max-height: 860px) and (min-width: 1300px) {
+@media only screen and (min-height: 700px) and (max-height: 860px) and (max-width: 520px) {
+  .banner_heading--top {
+    margin-left: 1rem;
+  }
+}
+@media only screen and (min-height: 700px) and (max-height: 860px) and (min-width: 1300px) {
   .banner_heading--top {
     margin-left: 21rem;
   }
 }
-@media only screen and (max-height: 860px) and (min-width: 1800px) {
+@media only screen and (min-height: 700px) and (max-height: 860px) and (min-width: 1800px) {
   .banner_heading--top {
     margin-left: 45rem;
   }
 }
-@media only screen and (max-height: 860px) and (min-width: 2300px) {
+@media only screen and (min-height: 700px) and (max-height: 860px) and (min-width: 2300px) {
   .banner_heading--top {
     margin-left: 71rem;
   }
 }
-@media only screen and (max-height: 720px) and (min-width: 540px) {
+@media only screen and (max-height: 700px) {
   .banner_heading--top {
-    margin-top: 12rem;
+    margin-top: 5rem;
   }
 }
-@media only screen and (max-height: 700px) and (min-width: 769px) {
+@media only screen and (min-height: 620px) and (max-height: 700px) and (min-width: 769px) {
   .banner_heading--top {
     margin-left: 5rem;
   }
 }
-@media only screen and (max-height: 700px) and (min-width: 1025px) {
+@media only screen and (min-height: 620px) and (max-height: 700px) and (min-width: 1025px) {
   .banner_heading--top {
-    margin-left: 15rem;
+    margin-left: 3rem;
   }
 }
-@media only screen and (max-height: 700px) and (min-width: 1441px) {
+@media only screen and (min-height: 620px) and (max-height: 700px) and (min-width: 1441px) {
   .banner_heading--top {
-    margin-left: 35rem;
+    margin-left: 25rem;
   }
 }
-@media only screen and (max-height: 700px) and (min-width: 1900px) {
+@media only screen and (min-height: 620px) and (max-height: 700px) and (min-width: 1900px) {
   .banner_heading--top {
-    margin-left: 60rem;
+    margin-left: 46rem;
   }
 }
-@media only screen and (max-height: 700px) and (min-width: 2300px) {
+@media only screen and (min-height: 620px) and (max-height: 700px) and (min-width: 2300px) {
   .banner_heading--top {
-    margin-left: 78rem;
+    margin-left: 68rem;
   }
 }
-@media only screen and (max-height: 640px) and (max-width: 360px) {
+@media only screen and (min-height: 560px) and (max-height: 620px) and (min-width: 769px) {
   .banner_heading--top {
-    margin-top: 10rem;
+    margin-left: 6rem;
   }
 }
-@media only screen and (max-height: 620px) and (max-width: 321px) {
-  .banner_heading--top {
-    margin-top: 10rem;
-  }
-}
-@media only screen and (max-height: 620px) and (min-width: 769px) {
+@media only screen and (min-height: 560px) and (max-height: 620px) and (min-width: 1025px) {
   .banner_heading--top {
     margin-left: 10rem;
   }
 }
-@media only screen and (max-height: 620px) and (min-width: 1025px) {
+@media only screen and (min-height: 560px) and (max-height: 620px) and (min-width: 1441px) {
   .banner_heading--top {
-    margin-left: 20rem;
+    margin-left: 33rem;
   }
 }
-@media only screen and (max-height: 620px) and (min-width: 1441px) {
+@media only screen and (min-height: 560px) and (max-height: 620px) and (min-width: 1900px) {
   .banner_heading--top {
-    margin-left: 43rem;
+    margin-left: 55rem;
   }
 }
-@media only screen and (max-height: 620px) and (min-width: 1900px) {
+@media only screen and (min-height: 560px) and (max-height: 620px) and (min-width: 2300px) {
   .banner_heading--top {
-    margin-left: 65rem;
-  }
-}
-@media only screen and (max-height: 620px) and (min-width: 2300px) {
-  .banner_heading--top {
-    margin-left: 85rem;
+    margin-left: 75rem;
   }
 }
 @media only screen and (max-height: 560px) and (min-width: 1025px) {
   .banner_heading--top {
-    margin-left: 20rem;
+    margin-left: 22rem;
   }
 }
-@media only screen and (max-height: 560px) and (min-width: 1300px) {
+@media only screen and (max-height: 560px) and (min-width: 1400px) {
   .banner_heading--top {
-    margin-left: 36rem;
+    margin-left: 38rem;
   }
 }
-@media only screen and (max-height: 560px) and (min-width: 1600px) {
+@media only screen and (max-height: 560px) and (min-width: 1700px) {
   .banner_heading--top {
-    margin-left: 51rem;
-  }
-}
-@media only screen and (max-height: 560px) and (min-width: 1800px) {
-  .banner_heading--top {
-    margin-left: 60rem;
+    margin-left: 53rem;
   }
 }
 @media only screen and (max-height: 560px) and (min-width: 2100px) {
   .banner_heading--top {
-    margin-left: 73rem;
+    margin-left: 66rem;
   }
 }
 @media only screen and (max-height: 560px) and (min-width: 2400px) {
   .banner_heading--top {
-    margin-left: 92rem;
+    margin-left: 85rem;
   }
 }
-@media only screen and (max-height: 500px) and (min-width: 1025px) {
+@media only screen and (max-height: 520px) and (min-width: 769px) {
   .banner_heading--top {
-    margin-left: 28rem;
+    margin-left: 11rem;
   }
 }
-@media only screen and (max-height: 500px) and (min-width: 1441px) {
+@media only screen and (max-height: 520px) and (min-width: 1025px) {
   .banner_heading--top {
-    margin-left: 51rem;
+    margin-left: 27rem;
   }
 }
-@media only screen and (max-height: 500px) and (min-width: 1900px) {
+@media only screen and (max-height: 520px) and (min-width: 1300px) {
   .banner_heading--top {
-    margin-left: 73rem;
+    margin-left: 41rem;
   }
 }
-@media only screen and (max-height: 500px) and (min-width: 2300px) {
+@media only screen and (max-height: 520px) and (min-width: 1600px) {
+  .banner_heading--top {
+    margin-left: 55rem;
+  }
+}
+@media only screen and (max-height: 520px) and (min-width: 1900px) {
+  .banner_heading--top {
+    margin-left: 67rem;
+  }
+}
+@media only screen and (max-height: 520px) and (min-width: 2100px) {
+  .banner_heading--top {
+    margin-left: 81rem;
+  }
+}
+@media only screen and (max-height: 520px) and (min-width: 2400px) {
   .banner_heading--top {
     margin-left: 96rem;
   }
 }
 @media only screen and (max-height: 420px) {
   .banner_heading--top {
-    margin-left: 3rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 }
 .banner_heading--bottom {
@@ -1332,17 +1281,17 @@ body {
   opacity: 0;
   animation: fadeIn 1s ease-out forwards 1s, slideInFromRight 1s ease-out 1s;
 }
-@media only screen and (max-width: 2300px) {
+@media only screen and (max-width: 2200px) {
   .banner_heading--bottom {
     margin-right: 24rem;
   }
 }
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 1900px) {
   .banner_heading--bottom {
     margin-right: 11rem;
   }
 }
-@media only screen and (max-width: 1800px) {
+@media only screen and (max-width: 1700px) {
   .banner_heading--bottom {
     margin-right: 7rem;
   }
@@ -1352,14 +1301,24 @@ body {
     margin-right: 4rem;
   }
 }
+@media only screen and (max-width: 769px) {
+  .banner_heading--bottom {
+    margin-right: 2rem;
+  }
+}
 @media only screen and (max-width: 426px) {
   .banner_heading--bottom {
     margin-right: 1rem;
   }
 }
-@media only screen and (max-height: 860px) and (min-width: 426px) and (max-width: 600px) {
+@media only screen and (max-height: 860px) and (min-width: 520px) and (max-width: 600px) {
   .banner_heading--bottom {
     margin-right: 3rem;
+  }
+}
+@media only screen and (max-height: 860px) and (max-width: 520px) {
+  .banner_heading--bottom {
+    margin-right: 1rem;
   }
 }
 @media only screen and (max-height: 860px) and (min-width: 1300px) {
@@ -1384,113 +1343,122 @@ body {
 }
 @media only screen and (max-height: 700px) and (min-width: 1025px) {
   .banner_heading--bottom {
-    margin-right: 15rem;
+    margin-right: 3rem;
   }
 }
 @media only screen and (max-height: 700px) and (min-width: 1441px) {
   .banner_heading--bottom {
-    margin-right: 35rem;
+    margin-right: 25rem;
   }
 }
 @media only screen and (max-height: 700px) and (min-width: 1900px) {
   .banner_heading--bottom {
-    margin-right: 60rem;
+    margin-right: 46rem;
   }
 }
 @media only screen and (max-height: 700px) and (min-width: 2300px) {
   .banner_heading--bottom {
-    margin-right: 78rem;
+    margin-right: 68rem;
   }
 }
 @media only screen and (max-height: 620px) and (min-width: 769px) {
   .banner_heading--bottom {
-    margin-right: 10rem;
+    margin-right: 6rem;
   }
 }
 @media only screen and (max-height: 620px) and (min-width: 1025px) {
   .banner_heading--bottom {
-    margin-right: 20rem;
+    margin-right: 10rem;
   }
 }
 @media only screen and (max-height: 620px) and (min-width: 1441px) {
   .banner_heading--bottom {
-    margin-right: 43rem;
+    margin-right: 33rem;
   }
 }
 @media only screen and (max-height: 620px) and (min-width: 1900px) {
   .banner_heading--bottom {
-    margin-right: 65rem;
+    margin-right: 55rem;
   }
 }
 @media only screen and (max-height: 620px) and (min-width: 2300px) {
   .banner_heading--bottom {
-    margin-right: 85rem;
+    margin-right: 75rem;
   }
 }
 @media only screen and (max-height: 560px) and (min-width: 1025px) {
   .banner_heading--bottom {
-    margin-right: 20rem;
+    margin-right: 22rem;
   }
 }
-@media only screen and (max-height: 560px) and (min-width: 1300px) {
+@media only screen and (max-height: 560px) and (min-width: 1400px) {
   .banner_heading--bottom {
-    margin-right: 36rem;
+    margin-right: 38rem;
   }
 }
-@media only screen and (max-height: 560px) and (min-width: 1600px) {
+@media only screen and (max-height: 560px) and (min-width: 1700px) {
   .banner_heading--bottom {
-    margin-right: 51rem;
-  }
-}
-@media only screen and (max-height: 560px) and (min-width: 1800px) {
-  .banner_heading--bottom {
-    margin-right: 60rem;
+    margin-right: 53rem;
   }
 }
 @media only screen and (max-height: 560px) and (min-width: 2100px) {
   .banner_heading--bottom {
-    margin-right: 73rem;
+    margin-right: 66rem;
   }
 }
 @media only screen and (max-height: 560px) and (min-width: 2400px) {
   .banner_heading--bottom {
-    margin-right: 92rem;
+    margin-right: 85rem;
   }
 }
-@media only screen and (max-height: 500px) and (min-width: 1025px) {
+@media only screen and (max-height: 520px) and (min-width: 769px) {
   .banner_heading--bottom {
-    margin-right: 28rem;
+    margin-left: 11rem;
   }
 }
-@media only screen and (max-height: 500px) and (min-width: 1441px) {
+@media only screen and (max-height: 520px) and (min-width: 1025px) {
   .banner_heading--bottom {
-    margin-right: 51rem;
+    margin-right: 27rem;
   }
 }
-@media only screen and (max-height: 500px) and (min-width: 1900px) {
+@media only screen and (max-height: 520px) and (min-width: 1300px) {
   .banner_heading--bottom {
-    margin-right: 73rem;
+    margin-right: 41rem;
   }
 }
-@media only screen and (max-height: 500px) and (min-width: 2300px) {
+@media only screen and (max-height: 520px) and (min-width: 1600px) {
+  .banner_heading--bottom {
+    margin-right: 55rem;
+  }
+}
+@media only screen and (max-height: 520px) and (min-width: 1900px) {
+  .banner_heading--bottom {
+    margin-right: 67rem;
+  }
+}
+@media only screen and (max-height: 520px) and (min-width: 2100px) {
+  .banner_heading--bottom {
+    margin-right: 81rem;
+  }
+}
+@media only screen and (max-height: 520px) and (min-width: 2400px) {
   .banner_heading--bottom {
     margin-right: 96rem;
-  }
-}
-@media only screen and (max-height: 420px) {
-  .banner_heading--bottom {
-    margin-right: 3rem;
   }
 }
 
 .banner_down-btn-wrapper {
   position: absolute;
   align-self: center;
-  bottom: 5rem;
 }
-@media only screen and (max-width: 1800px) {
+@media only screen and (min-width: 1700px) {
   .banner_down-btn-wrapper {
-    bottom: 10rem;
+    bottom: 5rem;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  .banner_down-btn-wrapper {
+    bottom: 9rem;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -1503,79 +1471,164 @@ body {
     bottom: 20rem;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 769px) {
+  .banner_down-btn-wrapper {
+    bottom: 30rem;
+  }
+}
+@media only screen and (min-height: 1200px) and (max-width: 1025px) {
+  .banner_down-btn-wrapper {
+    bottom: 31rem;
+  }
+}
+@media only screen and (max-height: 950px) and (max-width: 1800px) {
+  .banner_down-btn-wrapper {
+    bottom: 5rem;
+  }
+}
+@media only screen and (max-height: 950px) and (max-width: 1300px) {
+  .banner_down-btn-wrapper {
+    bottom: 10rem;
+  }
+}
+@media only screen and (max-height: 950px) and (max-width: 1025px) {
+  .banner_down-btn-wrapper {
+    bottom: 18rem;
+  }
+}
+@media only screen and (max-height: 950px) and (max-width: 769px) {
+  .banner_down-btn-wrapper {
+    bottom: 21rem;
+  }
+}
+@media only screen and (max-height: 950px) and (max-width: 600px) {
   .banner_down-btn-wrapper {
     bottom: 25rem;
   }
 }
-@media only screen and (max-height: 900px) {
+@media only screen and (max-height: 950px) and (max-width: 550px) {
   .banner_down-btn-wrapper {
-    bottom: 3rem;
+    bottom: 32rem;
   }
 }
-@media only screen and (max-height: 860px) {
+@media only screen and (max-height: 915px) and (min-width: 1025px) and (max-width: 1300px) {
+  .banner_down-btn-wrapper {
+    bottom: 6rem;
+  }
+}
+@media only screen and (max-height: 915px) and (min-width: 1300px) {
+  .banner_down-btn-wrapper {
+    bottom: 2.2rem;
+  }
+}
+@media only screen and (max-height: 915px) and (min-width: 769px) and (max-width: 1025px) {
+  .banner_down-btn-wrapper {
+    bottom: 12rem;
+  }
+}
+@media only screen and (max-height: 860px) and (min-width: 1025px) {
   .banner_down-btn-wrapper {
     bottom: 7rem;
   }
 }
 @media only screen and (max-height: 860px) and (max-width: 1025px) {
   .banner_down-btn-wrapper {
+    bottom: 9rem;
+  }
+}
+@media only screen and (max-height: 860px) and (max-width: 769px) {
+  .banner_down-btn-wrapper {
     bottom: 15rem;
   }
 }
-@media only screen and (max-height: 860px) and (max-width: 600px) {
-  .banner_down-btn-wrapper {
-    bottom: 20rem;
-  }
-}
-@media only screen and (max-height: 860px) and (max-width: 426px) {
+@media only screen and (max-height: 860px) and (max-width: 550px) {
   .banner_down-btn-wrapper {
     bottom: 25rem;
   }
 }
-@media only screen and (max-height: 860px) and (max-width: 376px) {
-  .banner_down-btn-wrapper {
-    bottom: 19rem;
-  }
-}
-@media only screen and (max-height: 800px) {
+@media only screen and (max-height: 800px) and (min-width: 1025px) {
   .banner_down-btn-wrapper {
     bottom: 3rem;
   }
 }
-@media only screen and (max-height: 740px) and (max-width: 540px) {
+@media only screen and (max-height: 800px) and (min-width: 769px) and (max-width: 1025px) {
   .banner_down-btn-wrapper {
-    bottom: 15rem;
+    bottom: 5rem;
   }
 }
-@media only screen and (max-height: 670px) {
+@media only screen and (max-height: 800px) and (max-width: 550px) {
+  .banner_down-btn-wrapper {
+    bottom: 18rem;
+  }
+}
+@media only screen and (max-height: 760px) and (min-width: 1025px) {
+  .banner_down-btn-wrapper {
+    bottom: 3rem;
+  }
+}
+@media only screen and (max-height: 760px) and (min-width: 769px) and (max-width: 1025px) {
+  .banner_down-btn-wrapper {
+    bottom: 5rem;
+  }
+}
+@media only screen and (max-height: 760px) and (max-width: 550px) {
+  .banner_down-btn-wrapper {
+    bottom: 18rem;
+  }
+}
+@media only screen and (max-height: 715px) and (min-width: 550px) and (max-width: 769px) {
+  .banner_down-btn-wrapper {
+    bottom: 9rem;
+  }
+}
+@media only screen and (max-height: 715px) and (max-width: 550px) {
+  .banner_down-btn-wrapper {
+    bottom: 14rem;
+  }
+}
+@media only screen and (max-height: 700px) and (min-width: 769px) {
+  .banner_down-btn-wrapper {
+    bottom: 6rem;
+  }
+}
+@media only screen and (max-height: 670px) and (min-width: 1025px) {
+  .banner_down-btn-wrapper {
+    bottom: 3rem;
+  }
+}
+@media only screen and (max-height: 670px) and (min-width: 769px) and (max-width: 1025px) {
+  .banner_down-btn-wrapper {
+    bottom: 6rem;
+  }
+}
+@media only screen and (max-height: 600px) and (min-width: 550px) and (max-width: 769px) {
+  .banner_down-btn-wrapper {
+    bottom: 2rem;
+  }
+}
+@media only screen and (max-height: 580px) and (min-width: 550px) and (max-width: 1025px) {
+  .banner_down-btn-wrapper {
+    bottom: 3rem;
+  }
+}
+@media only screen and (max-height: 580px) and (min-width: 426px) and (max-width: 600px) {
+  .banner_down-btn-wrapper {
+    bottom: 7rem;
+  }
+}
+@media only screen and (max-height: 540px) and (min-width: 426px) and (max-width: 600px) {
   .banner_down-btn-wrapper {
     bottom: 4rem;
   }
 }
-@media only screen and (max-height: 670px) and (max-width: 376px) {
+@media only screen and (max-height: 540px) and (max-width: 426px) {
   .banner_down-btn-wrapper {
-    bottom: 13rem;
+    bottom: 6rem;
   }
 }
-@media only screen and (max-height: 640px) and (max-width: 360px) {
+@media only screen and (max-height: 500px) {
   .banner_down-btn-wrapper {
-    bottom: 13rem;
-  }
-}
-@media only screen and (max-height: 580px) {
-  .banner_down-btn-wrapper {
-    bottom: 1.5rem;
-  }
-}
-@media only screen and (max-height: 580px) and (max-width: 360px) {
-  .banner_down-btn-wrapper {
-    bottom: 13rem;
-  }
-}
-@media only screen and (max-height: 420px) {
-  .banner_down-btn-wrapper {
-    bottom: 1rem;
+    bottom: 1.3rem;
   }
 }
 @media only screen and (max-height: 280px) {

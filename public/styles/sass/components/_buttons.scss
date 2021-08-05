@@ -97,60 +97,43 @@
     padding: 8rem;
     margin: 1rem 0;
     background-image: $linearGradient;
-
-    @media only screen and (max-width: 1300px){
-        padding: 7rem;
-    };
+    transition: all 1.5s;
 
     @media only screen and (max-width: 769px){
-        padding: 6rem;
-    };
-
-    @media only screen and (max-height: 950px){
         padding: 7rem;
     };
 
-    @media only screen and (max-height: 541px){
-        margin: 1rem;
-    };
-
-    @media only screen and (max-height: 415px){
-        padding: 3rem;
-    };
-
-    @media only screen and (max-height: 281px){
-        padding: 2.5rem;
-    };
-
-    @media only screen and (max-height: 860px){
-
-        @media only screen and (max-width: 769px){
-            padding: 6rem;
-        };
-
-        @media only screen and (max-width: 426px){
-            padding: 5.5rem;
-        };
-    };
-// 750 HEIGHT
-    @media only screen and (max-height: 750px){
+    @media only screen and (max-width: 426px){
         padding: 6rem;
     };
-// 670 HEIGHT
-    @media only screen and (max-height: 670px){
-        padding: 5rem;
+
+    @media only screen and (min-height: 1200px){  
+
+        @media only screen and (max-width: 1025px){
+            padding: 9rem;
+        };
+    };
+// 950 HEIGHT
+    @media only screen and (min-height: 915px) and (max-height: 950px){
+
+        @media only screen and (min-width: 769px){
+            padding: 7rem;
+        };
+    };
+// 915 HEIGHT
+    @media only screen and (min-height: 860px) and (max-height: 915px){
+        
+        @media only screen and (min-width: 1300px){
+            padding: 6rem;
+        };
+    };
+// 760 HEIGHT
+    @media only screen and (max-height: 760px){
+        padding: 6rem;
     };
 // 500 HEIGHT
     @media only screen and (max-height: 500px){
-        padding: 4rem;
-    };
-// 420 HEIGHT
-    @media only screen and (max-height: 420px){
         padding: 5rem;
-    }; 
-// 376 HEIGHT
-    @media only screen and (max-height: 376px){
-        padding: 4.5rem;
     }; 
 // 360 HEIGHT
     @media only screen and (max-height: 360px){
@@ -164,6 +147,7 @@
     &::after {
         content: "";
         display: inline-block;
+        opacity: 0;
         height: 100%;
         width: 100%;
         border-radius: 50%;
@@ -172,7 +156,6 @@
         left: 0;
         transition: all .4s;
         background: $fontColor;
-        animation: pulse 1s infinite 0.5s;
         z-index: -1;
     };
 
@@ -187,62 +170,49 @@
     left: 1.5rem;
     top: 2rem;
 
-    @media only screen and (max-width: 1300px){
-        width: 11rem;
-    };
-
     @media only screen and (max-width: 769px){
-        width: 9rem;
-    };
-
-    @media only screen and (max-height: 950px){
         width: 11rem;
     };
 
-    @media only screen and (max-height: 281px){
-        width: 4rem;
-        top: 0.8rem;
-    };
-// 860 HEIGHT
-    @media only screen and (max-height: 860px){
-
-        @media only screen and (max-width: 769px){
-            width: 9rem;
-        };
-
-        @media only screen and (max-width: 426px){
-            width: 8rem;
-        };
-    };
-// 750 HEIGHT
-    @media only screen and (max-height: 750px){
+    @media only screen and (max-width: 426px){
         width: 9rem;
     };
-// 670 HEIGHT
-    @media only screen and (max-height: 670px){
-        width: 7rem;
+
+    @media only screen and (min-height: 1200px){  
+
+        @media only screen and (max-width: 1025px){
+            width: 15rem;
+        };
+    };
+// 950 HEIGHT
+    @media only screen and (min-height: 915px) and (max-height: 950px){
+
+        @media only screen and (min-width: 769px){
+            width: 11rem;
+        };
+    };
+// 915 HEIGHT
+@media only screen and (min-height: 860px) and (max-height: 915px){
+        
+    @media only screen and (min-width: 1300px){
+        width: 9rem;
+    };
+};
+// 760 HEIGHT
+    @media only screen and (max-height: 760px){
+        width: 9rem;
     };
 // 500 HEIGHT
     @media only screen and (max-height: 500px){
-        width: 5rem;
-    };
-// 420 HEIGHT
-    @media only screen and (max-height: 420px){
         width: 7rem;
-    }; 
-// 376 HEIGHT
-    @media only screen and (max-height: 376px){
-        width: 6rem;
     }; 
 // 360 HEIGHT
     @media only screen and (max-height: 360px){
-        left: 1.1rem;
-        top: 1.5rem;
+        width: 5rem;
     }; 
 // 280 HEIGHT
     @media only screen and (max-height: 280px){
-        width: 5rem;
+        left: 0.5rem;
         top: 1rem;
-        left: 0.6rem;
-    };
+    }; 
 };

@@ -6,104 +6,114 @@ body{
 .banner{
 
     &_heading{
-        font-size: 10vh;
+        font-size: 10rem;
 // MAX HEIGHT
-        @media only screen and (max-width: 1800px){
-            font-size: 7vh;
+        @media only screen and (max-width: 1700px){
+            font-size: 8rem;
         };
 
         @media only screen and (max-width: 1300px){
-            font-size: 6vh;
+            font-size: 6rem;
         };
 
         @media only screen and (max-width: 768px){
-            font-size: 4.5vh;
+            font-size: 4.5rem;
         };
 
-        @media only screen and (max-width: 600px){
-            font-size: 3.5vh;
+        @media (max-width: 550px){
+            font-size: 3.5rem;
         };
 
         @media only screen and (max-width: 426px){
-            font-size: 2.5vh;
+            font-size: 2.5rem;
         };
 // 950 HEIGHT
         @media only screen and (max-height: 950px){
 
-            @media only screen and (min-width: 1300px){        
-                font-size: 9vh;
+            @media only screen and (min-width: 1025px) and (max-width: 1300px){
+                font-size: 7rem;
             };
-
-            @media only screen and (min-width: 1800px){        
-                font-size: 10vh;
+            
+            @media only screen and (min-width: 1301px){
+                font-size: 9.5rem;
             };
         };
 // 900 HEIGHT
         @media only screen and (max-height: 900px){
 
             @media only screen and (min-width: 600px) and (max-width: 769px){        
-                font-size: 5vh;
+                font-size: 4.5rem;
             };
 
-            @media only screen and (min-width: 426px) and (max-width: 600px){        
-                font-size: 3.5vh;
+            @media only screen and (min-width: 550px) and (max-width: 600px){        
+                font-size: 4rem;
             };
         };
 // 860 HEIGHT
         @media only screen and (max-height: 860px){
+
             @media only screen and (min-width: 1250px){        
-                font-size: 10vh;
-            };
-
-            @media only screen and (min-width: 1025px){        
-                font-size: 8vh;
-            };
-
-            @media only screen and (min-width: 426px) and (max-width: 600px){        
-                margin-left: 4.5vh;
-            };
-
-            @media only screen and (max-width: 426px){
-                font-size: 2.5vh;
+                font-size: 7rem;
             };
         };
-// 830 HEIGHT
-@media only screen and (max-height: 830px){
-
-    @media only screen and (max-width: 426px){        
-        font-size: 4vh;
-    };
-};
 // 800 HEIGHT
         @media only screen and (max-height: 800px){
+
             @media only screen and (min-width: 769px) and (max-width: 1025px){        
-                font-size: 7vh;
+                font-size: 5rem;
             };
         };
 // 720 HEIGHT
         @media only screen and (max-height: 720px){
-            @media only screen and (max-width: 540px){        
-                font-size: 5vh;
+
+            @media only screen and (min-width: 426px) and (max-width: 540px){        
+                font-size: 3.5rem;
             };
         };
 // 700 HEIGHT
         @media only screen and (max-height: 700px){
             @media only screen and (min-width: 600px) and (max-width: 769px){        
-                font-size: 7vh;
+                font-size: 5rem;
             };
 
             @media only screen and (min-width: 426px) and (max-width: 600px){        
-                font-size: 5vh;
+                font-size: 3.5rem;
             };
-
-            @media only screen and (max-width: 280px){        
-                font-size: 3.5vh;
+        };
+// 620 HEIGHT
+        @media only screen and (max-height: 620px){
+            @media only screen and (min-width: 1025px){        
+                font-size: 6rem;
+            };
+        };
+// 560 HEIGHT
+        @media only screen and (max-height: 560px){
+            @media only screen and (min-width: 1025px){        
+                font-size: 5rem;
+            };
+        };
+//520 HEIGHT
+        @media only screen and (max-height: 520px){
+            @media only screen and (min-width: 600px){        
+                font-size: 4rem;
             };
         };
 // 420 HEIGHT
         @media only screen and (max-height: 420px){
-            font-size: 10vh;
-        }; 
+            font-size: 4.2rem;
+        };
+// 400 HEIGHT
+        @media only screen and (max-height: 400px){
+            font-size: 4rem;
+        };
+// 370 HEIGHT
+        @media only screen and (max-height: 370px){
+            font-size: 3.5rem;
+        };
+// 340 HEIGHT
+        @media only screen and (max-height: 340px){
+            font-size: 3rem;
+        };
     };
 };
 

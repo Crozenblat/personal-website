@@ -1,8 +1,16 @@
 .contents-invisible{
 
-    div{
+    *{
         opacity: 0;
         transform: translateY(40rem);
+    };
+};
+
+.pulse{
+
+    &::after{
+        opacity: 1;
+        animation: pulse 1s infinite ease-out 0.5s;        
     };
 };
 
