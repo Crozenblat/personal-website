@@ -128,6 +128,18 @@ body{
         @media only screen and (max-width: 1441px){
             font-size: 3rem;
         };
+
+        @media only screen and (max-width: 1025px){
+            font-size: 4rem;
+        };
+
+        @media only screen and (max-width: 685px){
+            font-size: 3.5rem;
+        };
+
+        @media only screen and (max-width: 514px){
+            font-size: 3rem;
+        };
         
         @media only screen and (max-width: 426px){
             font-size: 2.5rem;

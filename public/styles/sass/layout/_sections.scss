@@ -30,15 +30,15 @@
             margin: 1rem 0;
         };
 
-        &:nth-of-type(2), &:nth-of-type(4){
+        &:nth-of-type(even){
             @media only screen and (max-width: 1025px){
-                flex-direction: column-reverse;
+                flex-direction: column;
             };
         };
 
-        &:nth-of-type(3), &:nth-of-type(5){
+        &:nth-of-type(odd){
             @media only screen and (max-width: 1025px){
-                flex-direction: column;
+                flex-direction: column-reverse;
             };
         };
     };

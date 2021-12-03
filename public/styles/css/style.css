@@ -211,6 +211,21 @@ body {
     font-size: 3rem;
   }
 }
+@media only screen and (max-width: 1025px) {
+  .cta-btn--section {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 685px) {
+  .cta-btn--section {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 514px) {
+  .cta-btn--section {
+    font-size: 3rem;
+  }
+}
 @media only screen and (max-width: 426px) {
   .cta-btn--section {
     font-size: 2.5rem;
@@ -407,8 +422,13 @@ body {
 }
 @media only screen and (max-width: 1025px) {
   .cta-btn--section {
+    width: 23rem;
+  }
+}
+@media only screen and (max-width: 685px) {
+  .cta-btn--section {
+    width: 21rem;
     height: 4.5rem;
-    width: 19rem;
   }
 }
 @media only screen and (max-width: 514px) {
@@ -617,6 +637,7 @@ body {
 }
 
 .tech-item, .hobby {
+  display: flex;
   list-style: none;
   margin: 0 1rem;
   position: relative;
@@ -918,12 +939,11 @@ body {
 }
 @media only screen and (max-width: 1025px) {
   .section_note {
-    bottom: -24rem;
+    bottom: -26rem;
   }
 }
 @media only screen and (max-width: 905px) {
   .section_note {
-    bottom: -25rem;
     width: 53rem;
   }
 }
@@ -1726,13 +1746,13 @@ body {
   }
 }
 @media only screen and (max-width: 1025px) {
-  .section--website:nth-of-type(2), .section--website:nth-of-type(4) {
-    flex-direction: column-reverse;
+  .section--website:nth-of-type(even) {
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 1025px) {
-  .section--website:nth-of-type(3), .section--website:nth-of-type(5) {
-    flex-direction: column;
+  .section--website:nth-of-type(odd) {
+    flex-direction: column-reverse;
   }
 }
 .section--about {
