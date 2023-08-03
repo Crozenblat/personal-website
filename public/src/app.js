@@ -33,7 +33,7 @@ const throttle = (fn, wait) => {
     window.addEventListener("scroll", () => {
         throttle(
         sections.forEach(section => {
-            if((section.getBoundingClientRect().top + document.body.scrollTop) < 200){
+            if((section.getBoundingClientRect().top + document.body.scrollTop) < 500){
                 section.classList.remove("contents-invisible");
             };
         }), 100);
